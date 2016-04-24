@@ -1,0 +1,127 @@
+.portfolio_wrapper {
+	padding: 40px 5%;
+}
+
+.portfolio {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.portfolio h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+
+}
+
+.portfolio h2 .fa {
+	color: #2AACC8;
+	font-size: 30px;
+	margin-right: 12px;
+}
+
+.portfolio_nav {
+	border-top: 1px solid rgba(0,0,0,.15);
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	overflow: hidden;
+	padding: 14px 0;
+}
+
+.portfolio_nav li {
+	float: left;
+}
+
+.portfolio_nav a {
+	color: #000;
+	display: inline-block;
+	font-size: 1.4em;
+	padding: 8px 15px 10px;
+}
+
+.portfolio_nav a:hover {
+	background-color: #81E4ED;
+}
+
+.portfolio_work .latest_works_item {
+	padding: 40px 0 0;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.portfolio_work .latest_works_item div:nth-child(1) {
+	background-image: url(../img/portfolio_works_1.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(2) {
+	background-image: url(../img/portfolio_works_2.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(3) {
+	background-image: url(../img/portfolio_works_3.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(4) {
+	background-image: url(../img/portfolio_works_4.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(5) {
+	background-image: url(../img/portfolio_works_5.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(7) {
+	background-image: url(../img/portfolio_works_7.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(8) {
+	background-image: url(../img/portfolio_works_8.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(9) {
+	background-image: url(../img/portfolio_works_9.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(10) {
+	background-image: url(../img/portfolio_works_10.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(11) {
+	background-image: url(../img/portfolio_works_11.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(12) {
+	background-image: url(../img/portfolio_works_12.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(13) {
+	background-image: url(../img/latest_works_form.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(14) {
+	background-image: url(../img/latest_works_limon.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(15) {
+	background-image: url(../img/latest_works_figures.jpg);
+}
+.portfolio_work .latest_works_item div:nth-child(16) {
+	background-image: url(../img/latest_works_darts.jpg);
+}
+
+.portfolio_pages {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.portfolio_pages a {
+	color: #000;
+	font-size: 1.4em;
+	padding: 8px 10px; 
+}
+
+.portfolio_pages_icon {
+	display: inline;
+}
+
+.portfolio_pages_icon a {
+	background-color: #E8EBF1;
+}
+
+.portfolio_pages_icon a:first-child {
+	padding-right: 6px;
+	margin-left: 5px;
+}
+
+.portfolio_pages a:last-child {
+	margin-left: 24px;
+}
+
+.portfolio_pages a:hover {
+	background-color: #81E4ED;
+}
