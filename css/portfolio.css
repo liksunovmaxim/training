@@ -48,52 +48,6 @@
 	border-bottom: 1px solid rgba(0,0,0,.15);
 }
 
-.portfolio_work .latest_works_item div:nth-child(1) {
-	background-image: url(../img/portfolio_works_1.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(2) {
-	background-image: url(../img/portfolio_works_2.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(3) {
-	background-image: url(../img/portfolio_works_3.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(4) {
-	background-image: url(../img/portfolio_works_4.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(5) {
-	background-image: url(../img/portfolio_works_5.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(7) {
-	background-image: url(../img/portfolio_works_7.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(8) {
-	background-image: url(../img/portfolio_works_8.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(9) {
-	background-image: url(../img/portfolio_works_9.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(10) {
-	background-image: url(../img/portfolio_works_10.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(11) {
-	background-image: url(../img/portfolio_works_11.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(12) {
-	background-image: url(../img/portfolio_works_12.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(13) {
-	background-image: url(../img/latest_works_form.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(14) {
-	background-image: url(../img/latest_works_limon.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(15) {
-	background-image: url(../img/latest_works_figures.jpg);
-}
-.portfolio_work .latest_works_item div:nth-child(16) {
-	background-image: url(../img/latest_works_darts.jpg);
-}
-
 .portfolio_pages {
 	padding-top: 30px;
 	text-align: center;

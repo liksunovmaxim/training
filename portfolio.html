@@ -24,9 +24,27 @@
 	<link rel="stylesheet" href="css/portfolio.css">
 	
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+	<script>
+		$( document ).ready(function() {
+		    var $container = $('.isotope');
+		    // filter buttons
+		    $('#filters a').click(function(){
+				var $this = $(this);
+		        // don't proceed if already selected
+		        if ( !$this.hasClass('is-checked') ) {
+		          $this.parents('#options').find('.is-checked').removeClass('is-checked');
+		          $this.addClass('is-checked');
+		        }
+		      var selector = $this.attr('data-filter');
+		      $container.isotope({  itemSelector: '.item', filter: selector });
+		      return false;
+		    });    
+		});
+	</script>
+
 	<title>Doc</title>
 </head>
 <body>
@@ -82,111 +100,127 @@
 				Portfolio
 			</h2>
 
-			<div class="portfolio_nav">
+			<div class="portfolio_nav" id="filters">
 				<ul>
-					<li><a href="#">All</a></li>
-					<li><a href="#">Websites</a></li>
-					<li><a href="#">Wordpress</a></li>
-					<li><a href="#">Mobile Apps</a></li>
-					<li><a href="#">Icons</a></li>
-					<li><a href="#">Logos</a></li>
-					<li><a href="#">Graphics</a></li>
+					<li><a class="is-checked" data-filter="*" href="#">All</a></li>
+					<li><a data-filter=".websites"href="#">Websites</a></li>
+					<li><a data-filter=".wordpress"href="#">Wordpress</a></li>
+					<li><a data-filter=".mobile_apps"href="#">Mobile Apps</a></li>
+					<li><a data-filter=".icons"href="#">Icons</a></li>
+					<li><a data-filter=".logos"href="#">Logos</a></li>
+					<li><a data-filter=".graphics"href="#">Graphics</a></li>
 				</ul>
 			</div>
 			
 			<div class="portfolio_work">
-				<div class="latest_works_item">
-					<div>
+				<div class="latest_works_item isotope">
+					<div class="logos item">
+						<img src="img/portfolio_works_1.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="graphics item">
+						<img src="img/portfolio_works_2.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="mobile_apps item">
+						<img src="img/portfolio_works_3.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="graphics item">
+						<img src="img/portfolio_works_4.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="wordpress item">
+						<img src="img/portfolio_works_5.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="graphics item">
+						<img src="img/portfolio_works_6.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="graphics item">
+						<img src="img/portfolio_works_7.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="websites item">
+						<img src="img/portfolio_works_8.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="websites item">
+						<img src="img/portfolio_works_9.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="icons item">
+						<img src="img/portfolio_works_10.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="icons item">
+						<img src="img/portfolio_works_11.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="logos item">
+						<img src="img/portfolio_works_12.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="logos item">
+						<img src="img/latest_works_form.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="mobile_apps item">
+						<img src="img/latest_works_limon.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="wordpress item">
+						<img src="img/latest_works_figures.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>
 						</h3>
 					</div>
-					<div>
+					<div class="websites item">
+						<img src="img/latest_works_darts.jpg" alt="img">
 						<h3>
 							<a href="#"><i class="fa fa-eye"></i></a>
 							<a href="#"><i class="fa fa-link"></i></a>

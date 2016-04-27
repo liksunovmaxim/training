@@ -327,24 +327,10 @@ nav ul li:hover .dropdown {
 .latest_works_item div {
 	width: 220px;
 	height: 160px;
-	box-sizing: border-box;
-	background: url(../img/latest_works_form.jpg) center center no-repeat;
 	display: inline-block;
 	margin: 0 2% 40px;
-	padding-top: 80px;
+	position: relative;
 	overflow: hidden;
-}
-
-.latest_works_item div:nth-child(2) {
-	background-image: url(../img/latest_works_limon.jpg);
-}
-
-.latest_works_item div:nth-child(3) {
-	background-image: url(../img/latest_works_figures.jpg);
-}
-
-.latest_works_item div:nth-child(4) {
-	background-image: url(../img/latest_works_darts.jpg);
 }
 
 .latest_works_item h3 {
@@ -353,6 +339,9 @@ nav ul li:hover .dropdown {
 	background-color: #2AACC8;
 	display: none;
 	padding-top: 20px;
+	position: absolute;
+		bottom: 0;
+		left: 0;
 	text-align: center;
 }
 
